@@ -15,12 +15,12 @@ categories: TIL
 그래서 됐던 방법은 이러하다.
 
 1. setting.py에 
-
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
-
+'''
+    STATIC_URL = '/static/'
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'static'),
+    ]
+'''
 이렇게 적어줄것! 
 
 2. 나의 프로젝트 디렉터리에 static이란 디렉터리를 생성한후 css파일들을 넣어준다.
