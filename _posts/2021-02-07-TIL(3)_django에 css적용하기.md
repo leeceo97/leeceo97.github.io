@@ -14,18 +14,20 @@ categories: TIL
 
 그래서 됐던 방법은 이러하다.
 
-1. setting.py에 
-'''
+1. setting.py에
+
+```{.python}
     STATIC_URL = '/static/'
     STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'static'),
     ]
-'''
-이렇게 적어줄것! 
+```
+
+이렇게 적어줄것!
 
 2. 나의 프로젝트 디렉터리에 static이란 디렉터리를 생성한후 css파일들을 넣어준다.
 
-3. css파일이 들어갈 base.html의 css경로에 /static/style.css를적어준다. 
+3. css파일이 들어갈 base.html의 css경로에 /static/style.css를적어준다.
 
 구글링을 하며 본것중 {% load static %} {% static '~~~~' %}등의 방법이 있었는데
 이방법은 일단 개인프로젝트가 끝난후 제대로 적용시켜봐야겠다.
